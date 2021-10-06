@@ -1,77 +1,28 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
-:root{
---main-font:'Roboto', sans-serif;
+body{
+    padding: 0;
+    margin:auto;
+    background-image: url("ui.jpg");
+height: 100vh;
+width: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 html{
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-header{
-    height: 100vh;
-width: 100%;
-background-image:url("io.jpeg");
-background-size: cover;
-background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-align-items: center;
-user-select: none;
+li{
+color:white;
+font-size: 34px;
+text-transform: capitalize;
+list-style: none;
 }
-.main-header{
-    text-align:left;
-    transition: 0.5s;
+li:not(:last-child){
+    margin-bottom:15px;
 }
-.main-header:hover{
-    box-shadow: -11px 29px 160px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -11px 29px 160px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -11px 29px 160px 0px rgba(0,0,0,0.75);
-}
+li:before{
+    content:"\0051""\002E";
+margin-right: 15px;
 
-.main-header h1{
-    font-size: 3rem;
-font-family: var(--main-font);
-color: rgb(56, 49, 49);
-}
-.main-header input{
 
-    width:90%;
-    padding: 1rem;
-    margin: 20px 0px;
-    border:none;
-    border-bottom: 1px solid rgb(143, 134, 134);
-    font-size: 1.3rem;
-    background:transparent;
-    outline: none;
 }
-.main-header button{
-
-    padding: 1rem 3rem;
-    font-size: 1.2rem;
-    background:grey;
-    color:white;
-    border:none;
-    border-radius: 50px;
-    cursor:pointer;
-    transition: 0.5s;
-    margin:20px;
-}
-.main-header button:hover{
-    transform: scale(1.2);
-}
-@media only screen and (min-width: 600px) {
-    header{
-height:100%;
-padding: 80px 90px;
-    }
-    .main-header button{
-        margin-top: 20%;
-    }
-    .main-header button:hover{
-        transform:scale(1.1);
-    }
-  }
